@@ -156,9 +156,14 @@ $(document).ready(function(){
     .animate({'bottom':'-10px','left':'96.5%'},150,'easeOutBack')
     .animate({'bottom':'0px','left':'1160px'},50);
   }
+  let Timer = setTimeout(moveText, 2500); //2.5초 뒤에 moveText 함수 실행
 
   
-  let Timer = setTimeout(moveText, 2500); //2.5초 뒤에 moveText 함수 실행
+  // 인트로 숨기기
+  function hideIntro(){
+    $('#intro').fadeOut();
+  }
+  let Timer2 = setTimeout(hideIntro, 3500); // 5초 뒤에 hideIntro 함수 실행
 
 
   // //scroll 마우스 애니메이션 함수

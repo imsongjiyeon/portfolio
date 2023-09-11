@@ -67,7 +67,6 @@ footer{
   width: 100%;
   height: 100vh;
   background-color: #FEE500;
-  /* background-color: #432200; */
   overflow: hidden;
 }
 
@@ -84,6 +83,7 @@ footer{
   fill:"#432200";
 }
 
+/* 육각형 움직이는 동작 */
 @keyframes polygon_ani{
   0% {bottom: -9%; fill:#432200;}
   /* 20% {bottom: 45%;  transform: scale(1.2); } */
@@ -108,6 +108,7 @@ footer{
   transform: translate(-50%, -50%);
 }
 
+/* text 감싸는 박스 */
 #text{
   /* background: skyblue; */
   position: relative;
@@ -119,6 +120,7 @@ footer{
   overflow: hidden;
 }
 
+/* 텍스트 span */
 #txt_wrap span{
   position : absolute;
   left: 50%;
@@ -129,17 +131,13 @@ footer{
   font-size: 90px;
   margin: 30px 10px;
   
-
-  /* text에 stroke 주는 방법1 */
+  /* text에 stroke 주는 방법1 - 안으로 생김 */
   /* -webkit-text-stroke: #432200; -webkit-text-stroke-width: 3px; */
 
-  /* text에 stroke 주는 방법2 */
+  /* text에 stroke 주는 방법2 - 바깥으로 생김 */
   text-shadow: -4px 0px #432200, 0px 4px #432200, 4px 0px #432200, 0px -4px #432200;
   /* text-shadow: offset-x offset-y blur color  >>, 콤마로 중첩 가능 (왼쪽 > 아래 > 오른쪽 > 위)*/
-  }
-
-
-
+}
 
 .overflowhidden{
 
