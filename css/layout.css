@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* 레이아웃 서식 header, main, footer 공통 서식 */
+
+/* html{
+  scroll-behavior: smooth;
+} */
+
+/* 헤더서식 */
+header{
+  width: 100%; height: 70px;
+  position: fixed; top: 0px; left: 0px;
+  z-index: 1000;
+}
+header:hover{
+  background: rgba(67, 34, 0, 1);
+}
+/* 세로 스크롤 값이 1100px 이상일 경우 header 배경색 적용 */
+.act{
+  background:rgba(67, 34, 0, 1) !important;
+}
+header > h1{
+  padding: 7px 25px;
+}
+header > h1 img{
+  width: 45px;
+}
+
+header nav{
+  width: 600px;
+  /* margin: -58px auto 0px auto; */
+  position: absolute;
+  top: 25px;
+  left: 50%; transform: translateX(-50%);
+}
+header .gnb{
+  display: flex;
+  justify-content: space-around;
+}
+header .gnb > li >a{
+  font-size: 1.2rem;
+  color: var(--t-color02);
+  font-weight: 500;
+}
+
+/* main{
+  background: linear-gradient(to bottom, #01010B 1500px, #fff 500px );
+} */
+/* 메인 내비게이션 서식 */
+#m_nav{}
+
+
+/* 푸터서식 */
+footer{
+  background: var(--bg-color02);
+  width: 100%;
+  padding: 40px 0px;
+  /* display: inline-block; */
+  height: 100px;
+  /* position: absolute; */
+}
+
+
+/* 인트로 */
+#intro{
+  position: fixed; z-index: 9999;
+  left: 0px; top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: #FEE500;
+  /* background-color: #432200; */
+  overflow: hidden;
+}
+
+/* 육각형 */
+#polygon{
+  position: absolute;
+  width: 101px; height: 87px;
+  left: 47.5%; 
+  bottom: -9%;
+  /* bottom: 50%; */
+  transform: translateX(0%);
+  /* transform-origin: 50% 50%; */
+  animation: polygon_ani 2.5s forwards;
+  fill:"#432200";
+}
+
+@keyframes polygon_ani{
+  0% {bottom: -9%; fill:#432200;}
+  /* 20% {bottom: 45%;  transform: scale(1.2); } */
+  30% {bottom: 45%;  transform: scale(1.2); animation-timing-function: easeInOutBack;}
+  40% {bottom: 50%; transform: scale(1.3);}
+  50% {bottom: 0; transform: scale(1);animation-timing-function: easeOutExpo;}
+  55% {bottom: 2%; transform: scale(1);animation-timing-function: easeOut;}
+  65% {bottom: -10%; transform: scale(1); animation-timing-function: easeInOutElastic;}
+  80%{bottom: 50%; fill:#432200; transform: scale(35);animation-timing-function: easeOutExpo;}
+  85%{bottom: 50%; fill: #FEE500; transform: scale(35);animation-timing-function: easeInOutElastic;}
+  100%{bottom: 50%; fill: #432200; transform: scale(0); animation-timing-function: easeInQuint;}
+}
+
+/* Ji-yeon's Portfolio */
+#txt_wrap{
+  position: absolute;
+  width: 1500px;
+  height: 150px;
+  /* background: pink; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#text{
+  /* background: skyblue; */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  width: 1205px;
+  /* height: 94px; */
+  height: 500px;
+  overflow: hidden;
+}
+
+#txt_wrap span{
+  position : absolute;
+  left: 50%;
+  bottom: -150px;
+  transform : translateX(-50%);
+  color: #FFF;
+  font-family: 'Rubik Bubbles';
+  font-size: 90px;
+  margin: 30px 10px;
+  
+
+  /* text에 stroke 주는 방법1 */
+  /* -webkit-text-stroke: #432200; -webkit-text-stroke-width: 3px; */
+
+  /* text에 stroke 주는 방법2 */
+  text-shadow: -4px 0px #432200, 0px 4px #432200, 4px 0px #432200, 0px -4px #432200;
+  /* text-shadow: offset-x offset-y blur color  >>, 콤마로 중첩 가능 (왼쪽 > 아래 > 오른쪽 > 위)*/
+  }
+
+
+
+
+.overflowhidden{
+
+}

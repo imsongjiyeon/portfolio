@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* Rubik Bubbles */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+/* 프리텐다드 - Pretendard */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* Roboto 웹폰트 연결하기 'Roboto Condensed', 'Roboto' */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+/* 모든 페이지에 공통으로 적용되는 서식 */
+:root{
+  --t-color01: #333;
+  --t-color02: #432200;
+  --bg-color01: #FEE500;
+  --bg-color02: #432200;
+  --t-size12: 12px;
+  --t-size14: 14px;
+  --t-size16: 16px;
+  --bg-color-red:#EA2328;
+}
+
+body{
+  font-family: 'Pretendard', 'Roboto', '맑은 고딕', sans-serif, Helvetica;
+  font-size: var(--t-size12);
+  color: var(--t-color01);
+  background: var(--bg-color01);
+  overflow-x: hidden;
+}
+a{
+  color: var(--t-color01);
+  text-decoration: none;
+  font-size: var(--t-size12);
+}

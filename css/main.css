@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* main.css */
+main{}
+
+/* home */
+#home{
+  height: 100vh; /* view height */
+  overflow: hidden;
+  position: relative;
+  background-image: url('../images/bg.jpg');
+}
+#home > h2{
+  display: none;
+}
+
+/* profile */
+#profile{
+  position: relative;
+  background: url('../images/.jpg'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
